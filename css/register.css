@@ -1,0 +1,95 @@
+html{
+    height:100%;
+    width: 100%;
+  }
+
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width: 100%;
+
+    color: gainsboro;
+    font-family: 'Roboto', sans-serif;
+}
+
+#containerl{
+    position: absolute;
+    width: 50%;
+    height:100%;
+    left:0px;
+    text-align: center;
+    /*margin: auto;*/
+    overflow:hidden;
+    background-color: #101010;
+}
+
+#title {
+    display:inline;
+    font-size:100%;
+}
+
+img {
+    margin-top:5%;
+    height:20%;
+}
+
+h1 {
+    color:orangered;
+}
+
+span {
+    color:gainsboro
+}
+
+#fields {
+    height:15%;
+}
+
+input {
+    width: 80%;
+    height:25%;
+    color: white;
+    background-color:#101010;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+label{
+    float:left;
+    margin-left:10%;
+}
+
+button {
+    width: 40%;
+    height: 20%;
+    background-color:orangered;
+    border: none;
+    border-radius: 4px;
+    color: gainsboro;
+    margin-top: 20px;
+}
+
+
+#container2 {
+    position: absolute;
+    right:0px;
+    width:50%;
+    height:100%;
+    background-color:red;
+}
+
+#showcase {
+    margin:0px;
+    height:100%;
+    width:100%;
+}
+
+@media(max-width: 768px){
+    #containerl{
+        width: 100%;
+    }
+    #container2{
+        display:none;
+    }
+  }

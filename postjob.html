@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Post Job Page">
+    <meta name="author" content="Talha">
+    <title>NUCES Circle | Post Job</title>
+    <link rel="stylesheet" href="./css/postjob.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/postjob.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">NUCES</span> Circle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="recruit.html">Recruit</a></li>
+                    <li><a href="postjob.html">Post Job</a></li>
+                    <li class="current"><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Post Your Job</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <br>
+                <ul id="services">
+                    <li>
+                        <h3>Job Title</h3>
+                        <input placeholder="Lorem ipsum dolor sit amet" id='title'></input>
+                    </li>
+                    <li>
+                        <h3>Description</h3>
+                        <textarea placeholder="Lorem ipsum dolor sit amet" id='desc'></textarea>
+                    </li>
+                    <li>
+                        <h3>Discipline</h3>
+                        <textarea placeholder="Lorem ipsum dolor sit amet" id='disc'></textarea>
+                    </li>
+                    <li>
+                        <h3>Experience</h3>
+                        <textarea placeholder="Lorem ipsum dolor sit amet" id='exp'></textarea>
+                    </li>
+                    <li>
+                        <h3>Tags</h3>
+                        <input placeholder="Lorem ipsum dolor sit amet" id='tags'></input>
+                    </li>
+                </ul>
+                <button onclick='postJob()'>Submit</button>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>NUCES Circle, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
+</html>

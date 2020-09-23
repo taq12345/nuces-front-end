@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Newsfeed Page">
+    <meta name="author" content="Talha">
+    <title>NUCES Circle | Newsfeed</title>
+    <link rel="stylesheet" href="./css/newsfeed.css">
+    <script src="javascript/endless.js"></script>
+    <script src="javascript/newsfeed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                makeNew();
+            }
+        });
+    </script>
+</head>
+
+<body onload="loadData()">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">NUCES</span> Circle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="newsfeed.html">Newsfeed</a></li>
+                    <li><a href="connections.html">Connections</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li class="current"><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Newsfeed</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Post a Status</h1>
+                <ul id="services">
+                    <textarea id='status' placeholder="Write a status"></textarea>
+                    <button  onclick="postStatus()">Post</button>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

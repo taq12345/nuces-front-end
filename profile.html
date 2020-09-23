@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Profile Page">
+    <meta name="author" content="Talha">
+    <title>NUCES Circle | Profile</title>
+    <script src="javascript/profile.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/profilestyle.css">
+</head>
+
+<body onload="loadData()">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">NUCES</span> Circle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="newsfeed.html">Newsfeed</a></li>
+                    <li><a href="connections.html">Connections</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li class="current"><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>My Profile</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Credentials<span id='edit' onClick='edit()'> edit</span></h1>
+                <ul id="services">
+                    <li>
+                        <h3>Accomplishments</h3>
+                        <p id='acc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                    </li>
+                    <li>
+                        <h3>Skills</h3>
+                        <p id='skills'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                    </li>
+                    <li>
+                        <h3>Interests</h3>
+                        <p id='interests'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                    </li>
+                    <li>
+                        <h3>Projects</h3>
+                        <p id='projects'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <img src='img/dp.png' id='dp'>
+                    <h3 id='name'></h3>
+                    <p id='graduation'>Graduation:
+                        <p id ='email'></p>
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>NUCES Circle, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Register Page">
+    <meta name="author" content="Talha">
+    <title>NUCES Circle | Register</title>
+    <script src="javascript/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/register.js"></script>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div id='containerl'>
+        <div id='title'>
+            <img src="img/fast.png">
+            <h1>NUCES <span>Circle</span></h1>
+        </div>
+
+        <div id='fields'>
+            <label>First Name</label><br>
+            <input type='text' id='fName' required><br>
+            <label>Last Name</label><br>
+            <input type='text' id='lName' required><br>
+            <label>Email</label><br>
+            <input type='email' id='email' required><br>
+            <label>Password</label><br>
+            <input type='password' id = 'pass' required><br>
+            <label>Confirm Password</label><br>
+            <input type='password' id = 'cPass' required><br>
+            <button type="submit" onclick="register(0)">Register as Recruiter</button>
+            <button type="submit" onclick="register(1)">Register as Student</button>
+        </div>
+    </div>
+
+    <div id='container2'>
+        <img id='showcase' src='img/showcase.jpg'>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Login Page">
+    <meta name="author" content="Talha">
+    <title>NUCES Circle | Login</title>
+    <link rel="stylesheet" href="./css/loginstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+</head>
+
+<body onload="checkLoginState()">
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '443288623113208',
+                cookie: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=443288623113208&autoLogAppEvents=1">
+        </script>
+
+    <div id='containerl' class="clearfix">
+
+
+        <div id='title'>
+            <img src="img/fast.png">
+            <h1>NUCES <span>Circle</span></h1>
+        </div>
+
+        <div id='fields'>
+            <label>Email</label><br>
+            <input type='email' id='email' required><br><br>
+            <label>Password</label><br>
+            <input type='password' id='pass' required><br>
+        </div>
+        <button onclick="login()" type="submit">Sign In</button>
+        <div id='options'>
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState()">
+            </fb:login-button>
+            <a>OR</a>
+            <button id="create" onclick="openRegister()">Create an account</button>
+        </div>
+
+    </div>
+
+    <div id='container2'>
+        <img id='showcase' src='img/showcase.jpg'>
+    </div>
+</body>
+
+</html>
