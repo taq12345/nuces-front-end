@@ -9,7 +9,7 @@ function register(type) {
         cPass : document.getElementById('cPass').value,
         type : type
     }
-
+    
     if (fields.fName.length == 0 || fields.lName.length == 0 || fields.email.length==0 || fields.pass.length==0 || fields.cPass.length ==0 || fields.type.length==0)
     {
         alert("Fields cant be empty");
