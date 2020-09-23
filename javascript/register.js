@@ -17,7 +17,7 @@ function register(type) {
     else
     {
         // make checks here as well
-        $.post('nuces-backend-git:3000/addUser', fields, function(data,status){
+        $.post('http://nuces-backend-git:8080/addUser', fields, function(data,status){
             //if success move to home
             if (data[0] == 'success')
             {
