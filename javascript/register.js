@@ -1,6 +1,6 @@
 function register(type) {
 
-    
+    console.log(ROUTE)
     var fields = {
         fName : document.getElementById('fName').value,
         lName : document.getElementById('lName').value,
