@@ -6,6 +6,7 @@ COPY . /etc/apache2/htdocs/
 
 RUN apt-get update && apt-get install curl
 RUN find /etc/apache2/htdocs/javascript/ -type f -exec sed -i -e "s/localhost:3000/nuces-backend-1-template-test.apps.shared-na4.na4.openshift.opentlc.com/g" {} \;
+RUN systemctl restart httpd
 
 
 
