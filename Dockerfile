@@ -1,4 +1,5 @@
 FROM centos:8
+RUN chgrp -R 0 /run && chmod -R g=u /run
 RUN yum -y install httpd
 COPY . /var/www/html/
 # RUN sed "s/Listen 80/Listen 8080/" /etc/httpd/conf/httpd.conf
