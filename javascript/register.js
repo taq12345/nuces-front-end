@@ -16,7 +16,7 @@ function register(type) {
     else
     {
         // make checks here as well
-        $.post('http://localhost:3000/addUser', fields, function(data,status){
+        $.post('http://nuces-backend-1-template-test.apps.shared-na4.na4.openshift.opentlc.com/addUser', fields, function(data,status){
             //if success move to home
             if (data[0] == 'success')
             {

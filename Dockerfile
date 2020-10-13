@@ -1,11 +1,10 @@
 FROM centos:8
-# USER root
 RUN yum -y install httpd
-# COPY . /var/www/html/
+COPY . /var/www/html/
 # RUN sed "s/Listen 80/Listen 8080/" /etc/httpd/conf/httpd.conf
-# COPY ./my-httpd.conf /etc/httpd/conf/httpd.conf
+COPY ./my-httpd.conf /etc/httpd/conf/httpd.conf
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-# EXPOSE 8080
+EXPOSE 8080
 
 # FROM httpd:2.4
 
