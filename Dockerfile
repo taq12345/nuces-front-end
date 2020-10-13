@@ -1,10 +1,13 @@
-FROM httpd:2.4
+FROM httpd
+COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 
-#COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
-#COPY . /usr/local/apache2/htdocs/
 # FROM httpd:2.4
 
+# USER ROOT
+# RUN sed "s/Listen 80/Listen 8080/" /usr/local/apache2/conf/httpd.conf
+# COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 
+# COPY . /usr/local/apache2/htdocs/
 
 # # USER root
 # # COPY ./my-httpd.conf /etc/apache2/conf/httpd.conf
